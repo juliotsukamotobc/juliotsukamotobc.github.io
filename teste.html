@@ -8,11 +8,11 @@
 <body>
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #005290;
+		background-color: #bf2f38;
 		font-family: "Arial", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #005290;
+		outline: 1px solid #bf2f38;
 	}
 </style>
 
@@ -41,17 +41,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://embraed--devservice.sandbox.my.salesforce.com',
-			'https://embraed--devservice.sandbox.my.salesforce-sites.com/',
+			'https://planoeplano--full.sandbox.my.salesforce.com',
+			'https://planoeplano--full.sandbox.my.site.com/',
 			gslbBaseURL,
-			'00D890000023wRJ',
-			'Atendimento',
+			'00D88000002BBmz',
+			'Bot_Priscila',
 			{
 				baseLiveAgentContentURL: 'https://c.la12s-core1.sfdc-xwy4ub.salesforceliveagent.com/content',
-				deploymentId: '572N40000000dKj',
-				buttonId: '573N40000000AvR',
+				deploymentId: '5726g000000Hjpl',
+				buttonId: '5736g000000HlOx',
 				baseLiveAgentURL: 'https://d.la12s-core1.sfdc-xwy4ub.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'Atendimento',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I6g000000HS1bEAG_174997a93fe',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -59,7 +59,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://embraed--devservice.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://planoeplano--full.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
